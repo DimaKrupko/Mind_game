@@ -10,7 +10,7 @@ class CaesarPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Caesar',
+          'Шифр Цезаря',
           textAlign: TextAlign.center,
         ),
         backgroundColor: Colors.black,

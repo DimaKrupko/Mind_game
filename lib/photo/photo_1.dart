@@ -60,7 +60,7 @@ class _Photo_1_PageState extends State<Photo_1_Page> {
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.symmetric(horizontal: 10),
-                      hintText: 'Enter found text',
+                      hintText: 'Введіть текст',
                     ),
                   ),
                   SizedBox(height: 0),
@@ -79,7 +79,7 @@ class _Photo_1_PageState extends State<Photo_1_Page> {
                     ),
                     onPressed: _checkText,
                     child: Text(
-                      'Check',
+                      '',
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,

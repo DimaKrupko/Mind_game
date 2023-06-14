@@ -10,7 +10,7 @@ class BraillePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Braille'),
+        title: Text('Шрифт Брайля'),
         backgroundColor: Colors.black,
       ),
       body: Container(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mind_game/levels.dart';
+import 'package:mind_game/rules.dart';
 import 'caesar/caesar_2.dart';
 import 'caesar/caesar_3.dart';
 import 'caesar/caesar.dart';
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
         '/braille': (context) => BraillePage(),
         '/photo_2': (context) => Photo_2_Page(),
         '/photo': (context) => PhotoPage(),
+        '/rules': (context) => RulesPage(),
       },
       home: HomePage(),
     );
@@ -61,7 +63,7 @@ class HomePage extends StatelessWidget {
                 color: Colors.black,
               ),
               child: Text(
-                'Menu',
+                'Меню',
                 style: GoogleFonts.roboto(
                   color: Colors.white,
                   fontSize: 25,
@@ -71,7 +73,17 @@ class HomePage extends StatelessWidget {
             ),
             ListTile(
               title: Text(
-                'Settings',
+                'Правила гри',
+                style: GoogleFonts.roboto(),
+                textAlign: TextAlign.center,
+              ),
+              onTap: () {
+                Navigator.pushNamed(context, '/rules');
+              },
+            ),
+            ListTile(
+              title: Text(
+                'Налаштування',
                 style: GoogleFonts.roboto(),
                 textAlign: TextAlign.center,
               ),
@@ -79,7 +91,7 @@ class HomePage extends StatelessWidget {
             ),
             ListTile(
               title: Text(
-                'Privacy Policy',
+                'Політика конфеденційності',
                 style: GoogleFonts.roboto(),
                 textAlign: TextAlign.center,
               ),
@@ -132,7 +144,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 child: Text(
-                  'Play',
+                  'Грати',
                   style: GoogleFonts.roboto(fontSize: 24),
                 ),
               ),

@@ -9,7 +9,7 @@ class MorsePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Morse Code'),
+        title: Text('Код Морзе'),
         backgroundColor: Colors.black,
       ),
       body: Container(

@@ -50,7 +50,7 @@ class LevelsPage extends StatelessWidget {
                             ),
                           ),
                           child: Text(
-                            'Caesar',
+                            'Шифр Цезаря',
                             style: TextStyle(fontSize: 25),
                           ),
                         ),
@@ -76,7 +76,7 @@ class LevelsPage extends StatelessWidget {
                             ),
                           ),
                           child: Text(
-                            'Morse Code',
+                            'Код Морзе',
                             style: TextStyle(fontSize: 25),
                           ),
                         ),
@@ -102,7 +102,7 @@ class LevelsPage extends StatelessWidget {
                             ),
                           ),
                           child: Text(
-                            'Photo',
+                            'Стеганографія',
                             style: TextStyle(fontSize: 25),
                           ),
                         ),
@@ -128,7 +128,7 @@ class LevelsPage extends StatelessWidget {
                             ),
                           ),
                           child: Text(
-                            'Braille',
+                            'Шрифт Брайля',
                             style: TextStyle(fontSize: 25),
                           ),
                         ),
@@ -154,7 +154,7 @@ class LevelsPage extends StatelessWidget {
                             ),
                           ),
                           child: Text(
-                            'Other',
+                            'Інші шифри',
                             style: TextStyle(fontSize: 25),
                           ),
                         ),

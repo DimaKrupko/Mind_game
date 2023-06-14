@@ -9,7 +9,7 @@ class PhotoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hidden text'),
+        title: Text('Стеганографія'),
         backgroundColor: Colors.black,
       ),
       body: Container(

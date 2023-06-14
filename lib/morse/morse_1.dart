@@ -62,7 +62,7 @@ class _Morse_1_PageState extends State<Morse_1_Page> {
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.symmetric(horizontal: 100),
-                      hintText: 'Enter decrypted text',
+                      hintText: 'Введіть текст',
                     ),
                   ),
                   SizedBox(height: 0),
@@ -81,7 +81,7 @@ class _Morse_1_PageState extends State<Morse_1_Page> {
                     ),
                     onPressed: _checkText,
                     child: Text(
-                      'Check',
+                      '',
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),

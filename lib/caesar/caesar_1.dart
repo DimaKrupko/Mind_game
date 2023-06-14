@@ -26,6 +26,32 @@ class _Caesar_1_PageState extends State<Caesar_1_Page> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
+        //Кнопка для підказки
+        actions: [
+          IconButton(
+            icon: Icon(Icons.lightbulb_outline),
+            onPressed: () {
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return AlertDialog(
+                    title: Text('Підказка'),
+                    content: Text(
+                        'Для розшифрування інформації використовуй шифр Цезаря із зсувом на 3 літери'),
+                    actions: [
+                      TextButton(
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
+                        child: Text('Закрити'),
+                      ),
+                    ],
+                  );
+                },
+              );
+            },
+          ),
+        ],
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -62,7 +88,7 @@ class _Caesar_1_PageState extends State<Caesar_1_Page> {
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.symmetric(horizontal: 100),
-                      hintText: 'Enter decrypted text',
+                      hintText: 'Введіть  текст',
                     ),
                   ),
                   SizedBox(height: 0),
@@ -81,7 +107,7 @@ class _Caesar_1_PageState extends State<Caesar_1_Page> {
                     ),
                     onPressed: _checkText,
                     child: Text(
-                      'Check',
+                      '',
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),

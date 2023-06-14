@@ -9,7 +9,7 @@ class OtherPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Other'),
+        title: Text('Інші шифри'),
         backgroundColor: Colors.black,
       ),
       body: Container(
