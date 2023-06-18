@@ -30,7 +30,7 @@ class LevelsPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: EdgeInsets.symmetric(vertical: 16),
+                        padding: EdgeInsets.fromLTRB(10, 40, 10, 16),
                         child: ElevatedButton(
                           onPressed: () {
                             Navigator.push(

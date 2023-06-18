@@ -26,6 +26,31 @@ class _Other_1_PageState extends State<Other_1_Page> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
+        //Кнопка для підказки
+        actions: [
+          IconButton(
+            icon: Icon(Icons.lightbulb_outline),
+            onPressed: () {
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return AlertDialog(
+                    title: Text('Підказка'),
+                    content: Text('Base64'),
+                    actions: [
+                      TextButton(
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
+                        child: Text('Закрити'),
+                      ),
+                    ],
+                  );
+                },
+              );
+            },
+          ),
+        ],
       ),
       body: Container(
         decoration: BoxDecoration(

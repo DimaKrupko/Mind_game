@@ -26,6 +26,32 @@ class _Braille_1_PageState extends State<Braille_1_Page> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
+        //Кнопка для підказки
+        actions: [
+          IconButton(
+            icon: Icon(Icons.lightbulb_outline),
+            onPressed: () {
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return AlertDialog(
+                    title: Text('Підказка'),
+                    content:
+                        Text('Для розшифрування використовуй шрифт Брайля'),
+                    actions: [
+                      TextButton(
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
+                        child: Text('Закрити'),
+                      ),
+                    ],
+                  );
+                },
+              );
+            },
+          ),
+        ],
       ),
       body: Container(
         decoration: BoxDecoration(

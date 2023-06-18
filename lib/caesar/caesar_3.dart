@@ -27,6 +27,32 @@ class _Caesar_3_PageState extends State<Caesar_3_Page> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
+        //Кнопка для підказки
+        actions: [
+          IconButton(
+            icon: Icon(Icons.lightbulb_outline),
+            onPressed: () {
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return AlertDialog(
+                    title: Text('Підказка'),
+                    content: Text(
+                        'Для розшифрування інформації використовуй шифр Цезаря із зсувом на 3 літери'),
+                    actions: [
+                      TextButton(
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
+                        child: Text('Закрити'),
+                      ),
+                    ],
+                  );
+                },
+              );
+            },
+          ),
+        ],
       ),
       body: Container(
         decoration: BoxDecoration(
